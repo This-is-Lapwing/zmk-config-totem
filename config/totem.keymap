@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -135,10 +136,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS   &kp RA(U)      &kp SQT  &kp DQT
-        &trans    &trans  &trans    &trans    &trans       &trans        &trans     &trans         &trans   &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp LEFT_WIN  &kp PSCRN  &kp F5         &trans   &kp BSLH  &trans
-                          &trans    &gif      &mo 0        &trans        &kp C_PP   &kp RIGHT_ALT
+                &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS   &kp RA(U)      &kp SQT  &kp DQT
+                &trans    &trans  &trans    &trans    &trans       &trans        &trans     &trans         &trans   &trans
+&bt BT_CLR_ALL  &trans    &trans  &trans    &trans    &trans       &kp LEFT_WIN  &kp PSCRN  &kp F5         &trans   &kp BSLH  &trans
+                                  &trans    &gif      &mo 0        &trans        &kp C_PP   &kp RIGHT_ALT
             >;
         };
 
